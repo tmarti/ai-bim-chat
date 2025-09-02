@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BIM Chat</title>
+</head>
+
+<body>
+    <div class="page-root">
+        <div class="column left-ui-column collapsed">
+            <div class="header">
+                📸 Snapshots
+            </div>
+            <div id="react-root-2" class="content">
+            </div>
+            <button id="button-take-snapshot" class="suggestion-in-viewer hidden">
+          <p>
+            <a href="#take-snapshot">📸</a>
+          </p>
+        </button>
+            <button id="toggle-left-ui-column" class="toggle-button toggle-left">📋</button>
+        </div>
+        <div id="xeokit-root" class="column middle-ui-column">
+            <canvas id="xeokit-canvas"></canvas>
+        </div>
+        <div class="column right-ui-column">
+            <button id="toggle-right-ui-column" class="toggle-button toggle-right">📋</button>
+            <div class="header">
+                BIM Chat, an AI enabled app 🤗
+                <button id="toggle-markdown" title="Toggle markdown mode">📄</button>
+            </div>
+            <div id="react-root" class="content">
+                <!-- Content that can scroll goes here -->
+            </div>
+        </div>
+        <script type="module" src="/src/main.tsx"></script>
+    </div>
+</body>
+
+</html>
